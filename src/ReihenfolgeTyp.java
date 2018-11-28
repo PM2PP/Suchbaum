@@ -1,0 +1,5 @@
+
+public enum ReihenfolgeTyp
+{
+	SYMMETRISCH, HAUPTREIHENFOLGE, NEBENREIHENFOLGE
+}
