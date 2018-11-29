@@ -1,5 +1,5 @@
 /*
- * Implementiert einen Binären Suchbaum mithilfe einer Array einbettung
+ * Implementiert einen Binären Suchbaum mithilfe einer Array einbettung.
  *  
  * @author J.P.Ritter & P.Aguilar Bremer
  * @version Oktober 2018
