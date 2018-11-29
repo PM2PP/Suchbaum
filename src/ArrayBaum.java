@@ -1,4 +1,9 @@
-
+/*
+ * Implementiert einen Binären Suchbaum mithilfe einer Array einbettung
+ *  
+ * @author J.P.Ritter & P.Aguilar Bremer
+ * @version Oktober 2018
+ */
 public class ArrayBaum<T extends Comparable<T>> implements BinaerSuchBaumInterface<T>
 {
 
@@ -64,12 +69,6 @@ public class ArrayBaum<T extends Comparable<T>> implements BinaerSuchBaumInterfa
 		}
 	}
 
-	@Override
-	public boolean finde(T knoten)
-	{
-		// TODO Auto-generated method stub
-		return false;
-	}
 
 	@Override
 	public void nebenreihenfolge()

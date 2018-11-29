@@ -1,4 +1,9 @@
-
+/*
+ * Implementiert einen Binären Suchbaum mithilfe von verlinkung der Knoten.
+ *  
+ * @author J.P.Ritter & P.Aguilar Bremer
+ * @version Oktober 2018
+ */
 public class LinkedBaum<T extends Comparable<T>> implements BinaerSuchBaumInterface<T>
 {
 
@@ -7,31 +12,6 @@ public class LinkedBaum<T extends Comparable<T>> implements BinaerSuchBaumInterf
 	public LinkedBaum(T knoten)
 	{
 		wurzel = new Knoten<T>(knoten);
-	}
-
-	public boolean finde(T knoten)
-	{
-		return findeHilfe(wurzel, knoten);
-	}
-
-	private boolean findeHilfe(Knoten<T> wurzel, T knoten)
-	{
-		if (wurzel == null)
-		{
-			return false;
-		}
-		else if (knoten.compareTo(wurzel.getDaten()) == 0)
-		{
-			return true;
-		}
-		else if (knoten.compareTo(wurzel.getDaten()) < 0)
-		{
-			return findeHilfe(wurzel.getLinkerKnoten(), knoten);
-		}
-		else
-		{
-			return findeHilfe(wurzel.getRechterKnoten(), knoten);
-		}
 	}
 
 	public void einfuegenKnoten(T knoten)
@@ -122,4 +102,29 @@ public class LinkedBaum<T extends Comparable<T>> implements BinaerSuchBaumInterf
 			System.out.print(wurzel.getDaten() + ", ");
 		}
 	}
+
+	// public boolean finde(T knoten)
+	// {
+	// return findeHilfe(wurzel, knoten);
+	// }
+	//
+	// private boolean findeHilfe(Knoten<T> wurzel, T knoten)
+	// {
+	// if (wurzel == null)
+	// {
+	// return false;
+	// }
+	// else if (knoten.compareTo(wurzel.getDaten()) == 0)
+	// {
+	// return true;
+	// }
+	// else if (knoten.compareTo(wurzel.getDaten()) < 0)
+	// {
+	// return findeHilfe(wurzel.getLinkerKnoten(), knoten);
+	// }
+	// else
+	// {
+	// return findeHilfe(wurzel.getRechterKnoten(), knoten);
+	// }
+	// }
 }

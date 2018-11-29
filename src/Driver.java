@@ -1,4 +1,7 @@
-import java.util.Scanner;
+/*
+ * @author J.P.Ritter & P.Aguilar Bremer
+ * @version Oktober 2018
+ */
 
 public class Driver
 {
@@ -6,26 +9,18 @@ public class Driver
 	{
 		ArrayListBaum<Integer> ab = new ArrayListBaum<Integer>();
 
-		ab.add(5);
-		ab.add(1);
-		ab.add(2);
-		ab.add(3);
-		ab.add(4);
-		ab.add(6);
-		ab.add(7);
-		System.out.println("\nSYMMETRISCH");
-		ab.reihenfolge(ReihenfolgeTyp.SYMMETRISCH).forEach(e -> System.out.print(e + ", "));
-		System.out.println("\nHAUPTREIHENFOLGE");
-		ab.reihenfolge(ReihenfolgeTyp.HAUPTREIHENFOLGE).forEach(e -> System.out.print(e + ", "));
-		System.out.println("\nNEBENREIHENFOLGE");
-		ab.reihenfolge(ReihenfolgeTyp.NEBENREIHENFOLGE).forEach(e -> System.out.print(e + ", "));
-		System.out.println();
-
-//		Scanner input = new Scanner(System.in);
-//		System.out.print("welche Daten werden gesucht: ");
-//		int valueToFind = input.nextInt();
-//		System.out.println((ab.finde(valueToFind) != null) ? "Daten gefunden" : "Daten nicht gefunden");
-
+		ab.einfuegenKnoten(5);
+		ab.einfuegenKnoten(1);
+		ab.einfuegenKnoten(2);
+		ab.einfuegenKnoten(3);
+		ab.einfuegenKnoten(4);
+		ab.einfuegenKnoten(6);
+		ab.einfuegenKnoten(7);
+		
+		ab.symmetrisch();
+		ab.hauptreihenfolge();
+		ab.nebenreihenfolge();
+		
 		LinkedBaum<Integer> lb = new LinkedBaum<Integer>(5);
 
 		lb.einfuegenKnoten(1);

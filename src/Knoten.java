@@ -1,4 +1,10 @@
-
+/*
+ * Implementiert den Knonten für einen Binären Suchbaum der
+ *  mithilfe von verlinkung realiert wird. 
+ *  
+ * @author J.P.Ritter & P.Aguilar Bremer
+ * @version Oktober 2018
+ */
 public class Knoten<T extends Comparable<T>>
 {
 
